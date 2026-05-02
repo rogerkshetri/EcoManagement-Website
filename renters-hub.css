@@ -1,0 +1,174 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    gap: 50px
+}
+
+nav a {
+    color: #1E293B;
+    font-family: "Noto Sans Georgian";
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #4E8FF9;
+}
+
+.title-box {
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 400px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;   
+    justify-content: center; 
+    gap: 10px; 
+}
+
+.title-box h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.title-box p {
+    color: #1E293B;
+    text-align: center;
+    font-family: "Noto Sans Georgian";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.title-icon {
+    width: 43px;
+    height: 43px;
+    margin-bottom: 12px;
+}
+
+.renters-card{
+    width: 745px;
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.25);
+    padding: 17px 45px;
+}
+
+.quick-info-box{
+    border-radius: 12px;
+    border: 1px solid #BFDBFE;
+    background: #EFF6FF;
+    padding: 5px 15px;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.quick-info-box strong {
+    font-size: 16px;
+}
+
+.quick-info-box p {
+    font-size: 15px;
+}
+
+.selected-savings-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 12px;
+    border: 1px solid #86EFAC;
+    background: #ECFDF5;
+    padding: 10px 25px;
+    margin-bottom: 14px;
+}
+
+.selected-savings-info strong {
+    font-size: 20px;
+}
+
+.selected-savings-info span {
+    color: #059669;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.tip-card,
+.tip-card-selected {
+    position: relative;
+    border-radius: 16px;
+    border: 2px solid #DBEAFE;
+    background: #FFF;
+    padding: 15px;
+}
+
+.tip-card-selected {
+    border-color: #10B981;
+    background: #ECFDF5;
+}
+
+.tip-card input,
+.tip-card-selected input {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.tip-card p,
+.tip-card-selected p {
+    font-size: 16px;
+    color: #64748B;
+    margin-bottom: 7px;
+}
+
+.tip-cost-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tip-cost-info small {
+    color: #6D28D9;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background: #EDE9FE;
+}
+
+.tip-cost-info strong {
+    color: #059669;
+    font-size: 16px;
+}
+
+.add-tips-btn {
+    width: 100%;
+    margin-top: 14px;
+    padding: 12px;
+    background: #3B82F6;
+    color: #fff;
+    border: none;
+    border-radius: 16px;
+    font-size: 21px;
+    font-weight: 700;
+    cursor: pointer;
+    filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.50));
+}
