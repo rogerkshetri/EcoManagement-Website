@@ -1,17 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans Georgian", sans-serif;
+}
+
+body {
+    background: #F8FAFC;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 40px;
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-weight: bold;
+    color: #4aa3df;
 }
 
 nav {
     display: flex;
-    gap: 50px
+    gap: 50px;
 }
 
-nav a {
+.nav-link {
     color: #1E293B;
-    font-family: "Noto Sans Georgian";
     font-size: 22px;
     font-weight: 700;
     text-decoration: none;
@@ -22,29 +43,40 @@ nav a {
     color: #4E8FF9;
 }
 
+.nav-link-active {
+    color: #4E8FF9;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
 .title-box {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     max-width: 400px;
 }
 
 .title-row {
     display: flex;
-    align-items: center;   
-    justify-content: center; 
-    gap: 10px; 
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
 
 .title-box h1 {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
 }
 
 .title-box p {
     color: #1E293B;
     text-align: center;
-    font-family: "Noto Sans Georgian";
     font-size: 24px;
     font-weight: 400;
 }
@@ -52,10 +84,10 @@ nav a {
 .title-icon {
     width: 43px;
     height: 43px;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
 }
 
-.renters-card{
+.renters-card {
     width: 745px;
     border-radius: 16px;
     border: 1px solid #E2E8F0;
@@ -64,7 +96,7 @@ nav a {
     padding: 17px 45px;
 }
 
-.quick-info-box{
+.quick-info-box {
     border-radius: 12px;
     border: 1px solid #BFDBFE;
     background: #EFF6FF;
@@ -115,6 +147,16 @@ nav a {
     border: 2px solid #DBEAFE;
     background: #FFF;
     padding: 15px;
+    transition-property: transform, box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    cursor: pointer;
+}
+
+.tip-card:hover,
+.tip-card-selected:hover {
+    transform: translateY(-2px);
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.18);
 }
 
 .tip-card-selected {
@@ -171,4 +213,30 @@ nav a {
     font-weight: 700;
     cursor: pointer;
     filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.50));
+    transition: all 0.2s ease;
+}
+
+.add-tips-btn:hover {
+    background: #2563EB; 
+    transform: translateY(-2px); 
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); 
+}
+
+footer {
+    display: flex;
+    gap: 20px;
+    padding: 15px 40px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    color: #1E293B;
+    font-weight: 600;
+}
+
+footer span {
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
 }
