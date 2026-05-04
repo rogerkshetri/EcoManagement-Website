@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoManagement - Saving Goals</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="saving_goals.css">
 </head>
 <body>
@@ -21,19 +26,100 @@
         <section class="hero">
             <div class="hero-title-box">
                 <img src="image/pig.png" alt="Saving" class="pig-icon">
-                <h1>Saving Goals</h1> <!-- Heading 1: 40px Bold -->
+                <h1>Saving Goals</h1>
             </div>
-            <p class="quotes">Little changes, cooler bills</p> <!-- Body Text: 16px Regular -->
+            <p class="quotes">Little changes, cooler bills</p>
         </section>
 
         <div class="main-container">
-            <div class="grid" id="goalsGrid">
-              
+            <div class="grid">
+                
+                <input type="checkbox" id="goal-1" class="card-checkbox">
+                <label for="goal-1" class="card">
+                    <div class="check-circle"></div>
+                    <div class="card-info">
+                        <b>Reduce AC usage by 2hrs/day</b>
+                        <span>$10/month</span>
+                    </div>
+                </label>
+
+                <input type="checkbox" id="goal-2" class="card-checkbox">
+                <label for="goal-2" class="card">
+                    <div class="check-circle"></div>
+                    <div class="card-info">
+                        <b>Shorter showers 10min</b>
+                        <span>$5/month</span>
+                    </div>
+                </label>
+
+                <input type="checkbox" id="goal-3" class="card-checkbox">
+                <label for="goal-3" class="card">
+                    <div class="check-circle"></div>
+                    <div class="card-info">
+                        <b>Reduce AC usage by 2hrs/day</b>
+                        <span>$10/month</span>
+                    </div>
+                </label>
+
+                <input type="checkbox" id="goal-4" class="card-checkbox">
+                <label for="goal-4" class="card">
+                    <div class="check-circle"></div>
+                    <div class="card-info">
+                        <b>Shorter showers 10min</b>
+                        <span>$5/month</span>
+                    </div>
+                </label>
+
+                <input type="checkbox" id="goal-5" class="card-checkbox">
+                <label for="goal-5" class="card">
+                    <div class="check-circle"></div>
+                    <div class="card-info">
+                        <b>Reduce AC usage by 2hrs/day</b>
+                        <span>$10/month</span>
+                    </div>
+                </label>
+
+                <input type="checkbox" id="goal-6" class="card-checkbox">
+                <label for="goal-6" class="card">
+                    <div class="check-circle"></div>
+                    <div class="card-info">
+                        <b>Shorter showers 10min</b>
+                        <span>$5/month</span>
+                    </div>
+                </label>
+
+                <input type="checkbox" id="goal-7" class="card-checkbox">
+                <label for="goal-7" class="card">
+                    <div class="check-circle"></div>
+                    <div class="card-info">
+                        <b>Turn off standby appliances</b>
+                        <span>$15/month</span>
+                    </div>
+                </label>
+
+                <input type="checkbox" id="goal-8" class="card-checkbox">
+                <label for="goal-8" class="card">
+                    <div class="check-circle"></div>
+                    <div class="card-info">
+                        <b>Turn off standby appliances</b>
+                        <span>$15/month</span>
+                    </div>
+                </label>
+
+                <input type="checkbox" id="goal-9" class="card-checkbox">
+                <label for="goal-9" class="card">
+                    <div class="check-circle"></div>
+                    <div class="card-info">
+                        <b>Turn off standby appliances</b>
+                        <span>$15/month</span>
+                    </div>
+                </label>
+
             </div>
 
             <div class="summary-bar">
                 <p class="body-text">Potential Savings</p>
-                <h2 id="totalDisplay">$0/month <span>= $0/year</span></h2> <!-- Heading 2 style -->
+                <h2>$0/month <span>= $0/year</span></h2>
             </div>
         </div>
     </main>
@@ -46,49 +132,5 @@
         </div>
     </footer>
 
-    <script>
-        const goalsData = [
-            { id: 1, title: "Reduce AC usage by 2hrs/day", price: 10 },
-            { id: 2, title: "Shorter showers 10min", price: 5 },
-            { id: 3, title: "Reduce AC usage by 2hrs/day", price: 10 },
-            { id: 4, title: "Shorter showers 10min", price: 5 },
-            { id: 5, title: "Reduce AC usage by 2hrs/day", price: 10 },
-            { id: 6, title: "Shorter showers 10min", price: 5 },
-            { id: 7, title: "Turn off standby appliances", price: 15 },
-            { id: 8, title: "Turn off standby appliances", price: 15 },
-            { id: 9, title: "Turn off standby appliances", price: 15 }
-        ];
-
-        let selectedIds = new Set();
-        const goalsGrid = document.getElementById('goalsGrid');
-        const totalDisplay = document.getElementById('totalDisplay');
-
-        function renderCards() {
-            goalsGrid.innerHTML = goalsData.map(goal => `
-                <div class="card ${selectedIds.has(goal.id) ? 'selected' : ''}" onclick="toggleGoal(${goal.id})">
-                    <div class="check-circle"></div>
-                    <div class="card-info">
-                        <b>${goal.title}</b>
-                        <span>$${goal.price}/month</span>
-                    </div>
-                </div>
-            `).join('');
-            updateTotal();
-        }
-
-        function toggleGoal(id) {
-            if (selectedIds.has(id)) selectedIds.delete(id);
-            else selectedIds.add(id);
-            renderCards();
-        }
-
-        function updateTotal() {
-            let total = 0;
-            goalsData.forEach(g => { if(selectedIds.has(g.id)) total += g.price; });
-            totalDisplay.innerHTML = `$${total}/month <span>= $${total * 12}/year</span>`;
-        }
-
-        renderCards();
-    </script>
 </body>
 </html>
