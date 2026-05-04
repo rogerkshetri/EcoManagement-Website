@@ -8,7 +8,7 @@
     --text-muted: #64748b;
     --border-color: #e2e8f0;
     
-   
+
     --font-main: 'Noto Sans Georgian', sans-serif;
 }
 
@@ -22,24 +22,23 @@ body {
     background-color: var(--bg-color);
     color: var(--text-dark);
     font-family: var(--font-main);
-    font-size: 16px; /* Body Text mặc định 16px */
-    font-weight: 400; /* Regular */
+    font-size: 16px; 
+    font-weight: 400; 
     line-height: 1.5;
 }
 
-/* Heading 1 - 40px / Bold */
 h1 {
     font-size: 40px;
     font-weight: 700;
 }
 
-/* Heading 2 - / Bold */
+
 h2, .heading-2 {
     font-size: 28px;
     font-weight: 700;
 }
 
-/* Body Text - 16px / Regular */
+/* Body Text - 16px */
 p, span, a, div {
     font-size: 16px;
     font-weight: 400;
@@ -91,7 +90,7 @@ nav a {
     height: auto;
 }
 
-/* Container_MAIN */
+/* Container_MAIN*/
 .main-container {
     max-width: 1440px;
     margin: 0 auto 80px;
@@ -108,7 +107,7 @@ nav a {
     margin-bottom: 50px;
 }
 
-/* Card  */
+/* CARD */
 .card {
     border: 2px solid var(--border-color);
     border-radius: 18px;
@@ -147,7 +146,6 @@ nav a {
     font-size: 16px;
 }
 
-
 .card-info b {
     display: block;
     font-size: 20px; 
@@ -162,10 +160,10 @@ nav a {
     font-size: 18px;
 }
 
-/* Summary Bar */
+/* Summary Bar - Heading 2 */
 .summary-bar {
     background-color: var(--primary-green);
-    color: white;
+    color: black;
     padding: 30px;
     border-radius: 20px;
     text-align: center;
@@ -175,7 +173,7 @@ nav a {
     font-size: 36px; 
 }
 
-/* Footer */
+/* Footer Body Text */
 footer {
     padding: 40px 8%;
     border-top: 1px solid var(--border-color);
