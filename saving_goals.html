@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoManagement - Saving Goals</title>
+    <link rel="stylesheet" href="saving_goals.css">
+</head>
+<body>
+
+    <header>
+        <img src="image/logo.png" alt="Logo" class="logo-img">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Renters Hub</a>
+            <a href="#">Saving Goals</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-title-box">
+                <img src="image/pig.png" alt="Saving" class="pig-icon">
+                <h1>Saving Goals</h1> <!-- Heading 1: 40px Bold -->
+            </div>
+            <p class="quotes">Little changes, cooler bills</p> <!-- Body Text: 16px Regular -->
+        </section>
+
+        <div class="main-container">
+            <div class="grid" id="goalsGrid">
+                <!-- Nội dung được tạo bởi JavaScript phía dưới -->
+            </div>
+
+            <div class="summary-bar">
+                <p class="body-text">Potential Savings</p>
+                <h2 id="totalDisplay">$0/month <span>= $0/year</span></h2> <!-- Heading 2 style -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="body-text">Copyright 2026 - EcoManagement</div>
+        <div class="footer-links">
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+    </footer>
+
+    <script>
+        const goalsData = [
+            { id: 1, title: "Reduce AC usage by 2hrs/day", price: 10 },
+            { id: 2, title: "Shorter showers 10min", price: 5 },
+            { id: 3, title: "Reduce AC usage by 2hrs/day", price: 10 },
+            { id: 4, title: "Shorter showers 10min", price: 5 },
+            { id: 5, title: "Reduce AC usage by 2hrs/day", price: 10 },
+            { id: 6, title: "Shorter showers 10min", price: 5 },
+            { id: 7, title: "Turn off standby appliances", price: 15 },
+            { id: 8, title: "Turn off standby appliances", price: 15 },
+            { id: 9, title: "Turn off standby appliances", price: 15 }
+        ];
+
+        let selectedIds = new Set();
+        const goalsGrid = document.getElementById('goalsGrid');
+        const totalDisplay = document.getElementById('totalDisplay');
+
+        function renderCards() {
+            goalsGrid.innerHTML = goalsData.map(goal => `
+                <div class="card ${selectedIds.has(goal.id) ? 'selected' : ''}" onclick="toggleGoal(${goal.id})">
+                    <div class="check-circle"></div>
+                    <div class="card-info">
+                        <b>${goal.title}</b>
+                        <span>$${goal.price}/month</span>
+                    </div>
+                </div>
+            `).join('');
+            updateTotal();
+        }
+
+        function toggleGoal(id) {
+            if (selectedIds.has(id)) selectedIds.delete(id);
+            else selectedIds.add(id);
+            renderCards();
+        }
+
+        function updateTotal() {
+            let total = 0;
+            goalsData.forEach(g => { if(selectedIds.has(g.id)) total += g.price; });
+            totalDisplay.innerHTML = `$${total}/month <span>= $${total * 12}/year</span>`;
+        }
+
+        renderCards();
+    </script>
+</body>
+</html>
