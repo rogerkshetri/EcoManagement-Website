@@ -1,4 +1,4 @@
-/* Liên kết Google Font Noto Sans Georgian */
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;700&display=swap');
 
 :root {
@@ -8,7 +8,7 @@
     --text-muted: #64748b;
     --border-color: #e2e8f0;
     
-    /* Thiết lập font theo yêu cầu */
+   
     --font-main: 'Noto Sans Georgian', sans-serif;
 }
 
@@ -33,7 +33,7 @@ h1 {
     font-weight: 700;
 }
 
-/* Heading 2 - Trong khoảng 24px đến 30px (Chọn 28px cho cân đối) / Bold */
+/* Heading 2 - / Bold */
 h2, .heading-2 {
     font-size: 28px;
     font-weight: 700;
@@ -63,7 +63,7 @@ header {
 nav a {
     text-decoration: none;
     color: var(--text-dark);
-    font-weight: 700; /* Menu thường để đậm để dễ nhìn */
+    font-weight: 700;
     margin-left: 30px;
 }
 
@@ -91,7 +91,7 @@ nav a {
     height: auto;
 }
 
-/* Container chính */
+/* Container_MAIN */
 .main-container {
     max-width: 1440px;
     margin: 0 auto 80px;
@@ -108,7 +108,7 @@ nav a {
     margin-bottom: 50px;
 }
 
-/* Card thiết kế theo chuẩn H2 và Body */
+/* Card  */
 .card {
     border: 2px solid var(--border-color);
     border-radius: 18px;
@@ -147,10 +147,10 @@ nav a {
     font-size: 16px;
 }
 
-/* Nội dung trong thẻ dùng Heading 2 cho tên mục và Body cho giá */
+
 .card-info b {
     display: block;
-    font-size: 20px; /* H2 thu nhỏ một chút cho vừa thẻ nhưng vẫn đậm */
+    font-size: 20px; 
     font-weight: 700;
     margin-bottom: 8px;
     line-height: 1.2;
@@ -162,7 +162,7 @@ nav a {
     font-size: 18px;
 }
 
-/* Summary Bar dùng Heading 2 */
+/* Summary Bar */
 .summary-bar {
     background-color: var(--primary-green);
     color: white;
@@ -172,10 +172,10 @@ nav a {
 }
 
 .summary-bar h2 {
-    font-size: 36px; /* Heading 2 nhấn mạnh */
+    font-size: 36px; 
 }
 
-/* Footer dùng Body Text */
+/* Footer */
 footer {
     padding: 40px 8%;
     border-top: 1px solid var(--border-color);
