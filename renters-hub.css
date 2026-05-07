@@ -1,3 +1,4 @@
+/* Global Reset/Base Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +6,7 @@
     font-family: "Noto Sans Georgian", sans-serif;
 }
 
+/* Body Layout */
 body {
     background: #F8FAFC;
     display: flex;
@@ -12,6 +14,7 @@ body {
     min-height: 100vh;
 }
 
+/* Header/Navbar */
 header {
     display: flex;
     justify-content: space-between;
@@ -21,16 +24,19 @@ header {
     border-bottom: 1px solid #ddd;
 }
 
+/* Logo Styles */
 .logo {
     font-weight: bold;
     color: #4aa3df;
 }
 
+/* Navbar Container */
 nav {
     display: flex;
     gap: 50px;
 }
 
+/* Navbar Links */
 .nav-link {
     color: #1E293B;
     font-size: 22px;
@@ -38,15 +44,18 @@ nav {
     text-decoration: none;
 }
 
+/* Navbar Hover and Active */
 .nav-link:hover,
 .nav-link:active {
     color: #4E8FF9;
 }
 
+/* Current Active Navbar Link */
 .nav-link-active {
     color: #4E8FF9;
 }
 
+/* Main Container */
 .container {
     flex: 1;
     display: flex;
@@ -55,12 +64,14 @@ nav {
     padding: 40px 20px;
 }
 
+/* Title Container */
 .title-box {
     text-align: center;
     margin-bottom: 20px;
     max-width: 400px;
 }
 
+/* Title Row Layout */
 .title-row {
     display: flex;
     align-items: center;
@@ -68,12 +79,14 @@ nav {
     gap: 10px;
 }
 
+/* Main Page Title */
 .title-box h1 {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 7px;
 }
 
+/* Subtitle Text */
 .title-box p {
     color: #1E293B;
     text-align: center;
@@ -81,12 +94,14 @@ nav {
     font-weight: 400;
 }
 
+/* Title Icon */
 .title-icon {
     width: 43px;
     height: 43px;
     margin-bottom: 7px;
 }
 
+/* Main Renters Card */
 .renters-card {
     width: 745px;
     border-radius: 16px;
@@ -96,6 +111,7 @@ nav {
     padding: 17px 45px;
 }
 
+/* Quick Info Container */
 .quick-info-box {
     border-radius: 12px;
     border: 1px solid #BFDBFE;
@@ -105,14 +121,17 @@ nav {
     margin-bottom: 12px;
 }
 
+/* Quick Info Heading */
 .quick-info-box strong {
     font-size: 16px;
 }
 
+/* Quick Info Text */
 .quick-info-box p {
     font-size: 15px;
 }
 
+/* Selected Savings Section */
 .selected-savings-info {
     display: flex;
     justify-content: space-between;
@@ -124,22 +143,26 @@ nav {
     margin-bottom: 14px;
 }
 
+/* Selected Savings Heading */
 .selected-savings-info strong {
     font-size: 20px;
 }
 
+/* Savings Amount */
 .selected-savings-info span {
     color: #059669;
     font-size: 28px;
     font-weight: 700;
 }
 
+/* Tip Grid Layout */
 .tips-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
 }
 
+/* Tip Cards */
 .tip-card,
 .tip-card-selected {
     position: relative;
@@ -153,17 +176,20 @@ nav {
     cursor: pointer;
 }
 
+/* Tip Card Hover */
 .tip-card:hover,
 .tip-card-selected:hover {
     transform: translateY(-2px);
     box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.18);
 }
 
+/* Tip Selected Card Styles */
 .tip-card-selected {
     border-color: #10B981;
     background: #ECFDF5;
 }
 
+/* Tip Checkbox Styles */
 .tip-card input,
 .tip-card-selected input {
     position: absolute;
@@ -174,6 +200,7 @@ nav {
     cursor: pointer;
 }
 
+/* Tip Description Text */
 .tip-card p,
 .tip-card-selected p {
     font-size: 16px;
@@ -181,12 +208,14 @@ nav {
     margin-bottom: 7px;
 }
 
+/* Tip Cost Info */
 .tip-cost-info {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Tip Cost Tag */
 .tip-cost-info small {
     color: #6D28D9;
     font-size: 12px;
@@ -196,11 +225,13 @@ nav {
     background: #EDE9FE;
 }
 
+/* Tip Savings Text */
 .tip-cost-info strong {
     color: #059669;
     font-size: 16px;
 }
 
+/* Add Tips Button */
 .add-tips-btn {
     width: 100%;
     margin-top: 14px;
@@ -216,12 +247,14 @@ nav {
     transition: all 0.2s ease;
 }
 
+/* Add Tips Button Hover */
 .add-tips-btn:hover {
     background: #2563EB; 
     transform: translateY(-2px); 
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); 
 }
 
+/* Footer */
 footer {
     display: flex;
     gap: 20px;
@@ -233,10 +266,12 @@ footer {
     font-weight: 600;
 }
 
+/* Footer Copyright Text */
 footer span {
     margin-right: 20px;
 }
 
+/* Footer Links */
 footer a {
     text-decoration: none;
 }
