@@ -97,7 +97,6 @@ nav a {
     margin-bottom: 50px;
 }
 
-/* Ẩn checkbox mặc định */
 .card-checkbox {
     display: none;
 }
@@ -112,7 +111,6 @@ nav a {
     transition: all 0.25s ease;
 }
 
-/* Khi checkbox được chọn, CSS sẽ tự động đổi màu thẻ card mà không cần JS */
 .card-checkbox:checked + .card {
     border-color: var(--primary-green);
     background-color: #f0fdf4;
