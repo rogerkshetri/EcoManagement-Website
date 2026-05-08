@@ -5,6 +5,29 @@
     font-family: "Noto Sans Georgian", sans-serif;
 }
 
+:root {
+    /*backgrounds*/
+    --clr-bg-page:    #F8FAFC;  
+    --clr-bg-surface: #FFFFFF;   
+    --clr-bg-info:    #EFF6FF;  
+
+    /*text*/
+    --clr-text-primary:   #1E293B;  
+    --clr-text-secondary: #64748B;  
+    --clr-text-info:      #1E40AF;  
+
+    /*misc*/
+    --clr-brand:       #4AA3DF;  
+    --clr-accent:      #4E8FF9;  
+    --clr-btn-hover:   #3B82F6;  
+    --clr-btn-default: #CBD5E1;  
+
+    /*borders*/
+    --clr-border:        #DDDDDD;  
+    --clr-border-upload: #CBD5E1;  
+    --clr-border-info:   #BFDBFE;  
+}
+
 body {
     background: #F8FAFC;
     display: flex;
