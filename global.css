@@ -235,19 +235,20 @@ header {
   margin-top: 75px;
   max-width: 20%; 
   height: auto;    
-  
-  & h3 {
+}
+
+.upload-content h3 {
     color: var(--clr-text-secondary);
     margin-top: 20px;
     font-size: 18px;
     margin-bottom: 5px;
   }
 
-  & h4 {
+.upload-content h4 {
     color: var(--clr-text-secondary);
     font-size: 14px;
   }
-}
+
 
 .continue-btn {
   display: flex;             
