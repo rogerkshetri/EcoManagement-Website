@@ -48,6 +48,7 @@ header {
 }
 
 .logo-img {
+    background-image: url('icons/logo.png');
     height: 60px;
     width: auto;
 }
@@ -78,6 +79,7 @@ nav a {
 }
 
 .pig-icon {
+    background-image: url('icons/pig.png');
     width: 50px;
     height: auto;
 }
