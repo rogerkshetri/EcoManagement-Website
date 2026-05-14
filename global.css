@@ -1,3 +1,8 @@
+/* 
+   Stylesheet developed collaboratively by OL10.
+   Final consolidation and integration by Harry Montgomery.
+*/
+
 /* Global */
 * {
     margin: 0;
@@ -86,7 +91,10 @@ nav {
     font-weight: 600;
 }
 
-/* Homepage */
+/* 
+    Homepage 
+    Author: Robindro Kshetrimayum
+*/
 header {
   display: flex;
   justify-content: space-between;
@@ -183,7 +191,10 @@ header {
   opacity: 0.9;
 }
 
-/* Upload */
+/* 
+   Upload
+   Author: Dion Kircher
+*/
 .upload-title-box {
   text-align: left;
   max-width: 400px;
@@ -295,7 +306,10 @@ header {
     }
 }
 
-/* Bill Translator */
+/* 
+   Bill Translator
+   Author: Harry Montgomery 
+*/
 .bill-container {
     flex: 1;
     display: flex;
@@ -476,7 +490,10 @@ header {
     text-decoration: underline;
 }
 
-/* Renters Hub */
+/* 
+   Renters Hub
+   Author: Mustafa Luaibi
+*/
 .renters-title-box {
     text-align: center;
     margin-bottom: 20px;
@@ -641,7 +658,10 @@ header {
     filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
-/* Saving Goals */
+/* 
+   Saving Goals
+   Author: Cong Duc Hung Nguyen 
+*/
 .hero {
     text-align: center;
     padding: 50px 20px;
