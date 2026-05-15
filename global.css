@@ -159,7 +159,7 @@ footer a:hover {
   width: 420px;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.25);
   overflow: hidden;
   text-align: center;
 }
@@ -167,6 +167,7 @@ footer a:hover {
 .choice-header {
   height: 30px;
   background: #3B82F6;
+  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
 .choice-content {
@@ -189,9 +190,9 @@ footer a:hover {
   border-radius: 6px;
   font-size: 16px;
   cursor: pointer;
-
   background: #cfd6dd;
   color: #333;
+  filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.50));
 
   transition: all 0.2s ease;
 }
@@ -199,6 +200,8 @@ footer a:hover {
 .btn:hover,
 .btn:active {
   background: #3B82F6;
+  transform: translateY(-2px);
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
   color: #fff;
   opacity: 0.9;
 }
