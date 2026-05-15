@@ -70,19 +70,15 @@ header {
 }
 
 @keyframes glowPulse {
-
   0% {
     filter: drop-shadow(0 0 0px #4dafff);
   }
-
   50% {
     filter: drop-shadow(0 0 14px #4dafff);
   }
-
   100% {
     filter: drop-shadow(0 0 0px #4dafff);
   }
-
 }
 
 nav {
@@ -158,10 +154,6 @@ footer a:hover {
   & p + p {
     margin-top: 12px;
   }
-
-  & strong {
-    color: #1E293B;
-  }
 }
 
 .choice-box {
@@ -207,9 +199,9 @@ footer a:hover {
   transition: all 0.2s ease;
 }
 
-.btn:hover,
-.btn:active {
-  background: #3B82F6;
+.btn:hover{
+  background: var(--clr-btn-hover);
+  color: var(--clr-bg-surface);
   transform: translateY(-2px);
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
   color: #fff;
