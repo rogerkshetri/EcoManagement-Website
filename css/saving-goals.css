@@ -11,7 +11,6 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Noto Sans Georgian", sans-serif;
 }
 
 body {
@@ -23,6 +22,7 @@ body {
     line-height: 1.5;
 }
 
+/* Typography */
 h1 {
     font-size: 40px;
     font-weight: 700;
@@ -38,6 +38,7 @@ p, span, a, div {
     font-weight: 400;
 }
 
+/* Header */
 header {
     background: white;
     padding: 15px 8%;
@@ -52,13 +53,27 @@ header {
     width: auto;
 }
 
+nav {
+    display: flex;
+    gap: 30px;
+}
+
 nav a {
     text-decoration: none;
     color: var(--text-dark);
     font-weight: 700;
-    margin-left: 30px;
+    transition: color 0.2s ease;
 }
 
+nav a:hover {
+    color: var(--primary-green);
+}
+
+nav a[aria-current="page"] {
+    color: var(--primary-green);
+}
+
+/* Hero Section */
 .hero {
     text-align: center;
     padding: 50px 20px;
@@ -82,6 +97,7 @@ nav a {
     height: auto;
 }
 
+/* Main Container */
 .main-container {
     max-width: 1440px;
     margin: 0 auto 80px;
@@ -91,11 +107,16 @@ nav a {
     box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
 }
 
-.grid {
+/* Goals Grid */
+.goals-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 50px;
+}
+
+.goal-card-wrapper {
+    position: relative;
 }
 
 .card-checkbox {
@@ -110,6 +131,11 @@ nav a {
     gap: 20px;
     cursor: pointer;
     transition: all 0.25s ease;
+}
+
+.card:hover {
+    border-color: var(--primary-green);
+    box-shadow: 0 4px 12px rgba(86, 201, 134, 0.1);
 }
 
 .card-checkbox:checked + .card {
@@ -127,6 +153,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.25s ease;
 }
 
 .card-checkbox:checked + .card .check-circle {
@@ -138,14 +165,21 @@ nav a {
     content: '✓';
     color: white;
     font-size: 16px;
+    font-weight: bold;
+}
+
+/* Card Info */
+.card-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .card-info b {
-    display: block;
     font-size: 20px;
     font-weight: 700;
-    margin-bottom: 8px;
     line-height: 1.2;
+    color: var(--text-dark);
 }
 
 .card-info span {
@@ -154,18 +188,33 @@ nav a {
     font-size: 18px;
 }
 
+/* Summary Bar */
 .summary-bar {
     background-color: var(--primary-green);
-    color: black;
+    color: var(--text-dark);
     padding: 30px;
     border-radius: 20px;
     text-align: center;
 }
 
-.summary-bar h2 {
-    font-size: 36px;
+.summary-bar .body-text {
+    font-size: 16px;
+    color: rgba(30, 41, 59, 0.8);
+    margin-bottom: 10px;
 }
 
+.summary-bar h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.summary-bar h2 span {
+    font-size: 20px;
+    font-weight: 700;
+    color: rgba(30, 41, 59, 0.7);
+}
+
+/* Footer */
 footer {
     padding: 40px 8%;
     border-top: 1px solid var(--border-color);
@@ -178,7 +227,67 @@ footer a {
     text-decoration: none;
     color: inherit;
     margin-left: 25px;
+    transition: color 0.2s ease;
 }
 
-@media (max-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
-@media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
+footer a:hover {
+    color: var(--primary-green);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .goals-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .main-container {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    .goals-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 15px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    nav a {
+        text-align: center;
+    }
+
+    .main-container {
+        padding: 20px;
+        margin-bottom: 40px;
+    }
+
+    .summary-bar {
+        padding: 20px;
+    }
+
+    .summary-bar h2 {
+        font-size: 28px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 30px 15px;
+    }
+
+    footer a {
+        margin-left: 0;
+        margin-right: 25px;
+    }
+}
