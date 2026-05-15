@@ -1,5 +1,5 @@
 :root {
-            --primary-blue: #4a80f6;
+            var(--primary-blue): #3b82f6;
             --primary-green: #52c279;
             --bg-body: #f8fafc;
             --bg-light-blue: #f0f6ff;
@@ -18,12 +18,21 @@
             padding: 0;
         }
 
+       
         body {
             background-color: var(--bg-body);
             color: var(--text-dark);
             font-family: var(--font-main);
             font-size: 14px;
             line-height: 1.5;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+     
+        main {
+            flex: 1;
         }
 
         /* ---- HEADER & NAV ---- */
@@ -35,6 +44,13 @@
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid var(--border-grey);
+        }
+
+        /* LOGO ADJUSTMENT: Removed conflicting margins */
+        .logo-link {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
         }
 
         .logo-img {
@@ -56,8 +72,8 @@
             transition: color 0.2s ease;
         }
 
-        nav a.active {
-            color: var(--primary-blue);
+        nav a.active, nav a:hover {
+            color: #3b82f6; /* Hover effect added back in */
         }
 
         /* ---- HERO TITLE ---- */
@@ -109,15 +125,8 @@
             margin-bottom: 20px;
         }
 
-        .info-banner b { 
-                    font-size: 13px; 
-                    color: var(--text-dark); 
-                    display: block;
-        }
-        .info-banner span { 
-                    font-size: 12px; 
-                    color: var(--text-dark); 
-        }
+        .info-banner b { font-size: 13px; color: var(--text-dark); display: block;}
+        .info-banner span { font-size: 12px; color: var(--text-dark); }
 
         /* ---- SUMMARY BLOCKS ---- */
         .summary-row {
@@ -138,22 +147,9 @@
             gap: 5px;
         }
 
-        .summary-box b { 
-                    font-size: 14px; 
-                    color: var(--text-dark); 
-        }
-
-        .val-blue { 
-                    font-size: 24px; 
-                    font-weight: 700; 
-                    color: var(--primary-blue); 
-        }
-
-        .val-green { 
-                    font-size: 24px; 
-                    font-weight: 700; 
-                    color: var(--primary-green); 
-        }
+        .summary-box b { font-size: 14px; color: var(--text-dark); }
+        .val-blue { font-size: 24px; font-weight: 700; color: #3b82f6; }
+        .val-green { font-size: 24px; font-weight: 700; color: var(--primary-green); }
 
         /* ---- GOALS LIST ---- */
         .goal-list {
@@ -229,8 +225,9 @@
         .btn.done { 
                     background-color: var(--primary-green); 
         }
+
         .btn.mark { 
-                    background-color: var(--primary-blue); 
+                    background-color: #3b82f6; 
         }
 
         .saving-text { 
@@ -268,13 +265,12 @@
         }
 
         .add-goal-inputs input:focus { 
-                    border-color: var(--primary-blue); 
+                    border-color: #3b82f6; 
         }
 
         .input-desc { 
                     flex: 1; 
         }
-
         .input-val { 
                     width: 80px; 
         }
@@ -283,7 +279,7 @@
         .btn-save-plan {
             width: 100%;
             padding: 14px;
-            background-color: var(--primary-blue);
+            background-color: #3b82f6;
             color: white;
             font-size: 16px;
             font-weight: 700;
@@ -293,9 +289,7 @@
             transition: opacity 0.2s;
         }
 
-        .btn-save-plan:hover { 
-                    opacity: 0.9; 
-        }
+        .btn-save-plan:hover { opacity: 0.9; }
 
         /* ---- FOOTER ---- */
         footer {
