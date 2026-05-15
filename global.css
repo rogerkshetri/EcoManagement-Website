@@ -121,14 +121,6 @@ footer a:hover {
     Homepage 
     Author: Robindro Kshetrimayum
 */
-.container {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 40px 20px;
-}
-
 .title-box {
   text-align: center;
   margin-bottom: 40px;
@@ -143,7 +135,6 @@ footer a:hover {
   & p {
     font-size: 16px;
     color: #64748B;
-    margin: 0;
   }
 
   & p + p {
@@ -164,10 +155,11 @@ footer a:hover {
   text-align: center;
 }
 
-.choice-header {
+.choice-box::before {
+  content: "";
+  display: block;
   height: 30px;
   background: #3B82F6;
-  box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.25);
 }
 
 .choice-content {
