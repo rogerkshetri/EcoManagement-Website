@@ -125,11 +125,6 @@ footer a:hover {
     Homepage 
     Author: Robindro Kshetrimayum
 */
-.logo {
-  font-weight: bold;
-  color: #4aa3df;
-}
-
 .container {
   flex: 1;
   display: flex;
@@ -202,7 +197,7 @@ footer a:hover {
   background: #cfd6dd;
   color: #333;
 
-  transition: opacity 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .btn:hover,
