@@ -79,7 +79,7 @@ nav a:hover, nav a.active { color: var(--primary-green); }
 .pig-icon { width: 50px; height: auto; }
 
 .main-container {
-    max-width: 1440px; /* Giữ nguyên kích thước form lớn của bạn */
+    max-width: 1440px;
     margin: 0 auto 80px;
     background: white;
     border-radius: 24px;
