@@ -222,12 +222,4 @@ footer {
 }
 footer a { text-decoration: none; color: inherit; margin-left: 25px; }
 
-/* ---- RESPONSIVE ---- */
-@media (max-width: 768px) {
-    header { height: auto; padding: 0 0 15px 0; flex-direction: column; gap: 20px; }
-    .logo-img { height: 80px; box-shadow: none; border-bottom: 1px solid var(--border-color); }
-    nav { gap: 20px; flex-wrap: wrap; justify-content: center; }
-    .summary-row { flex-direction: column; gap: 15px; }
-    .add-goal-inputs { flex-direction: column; }
-    .input-val { width: 100%; }
-}
+
