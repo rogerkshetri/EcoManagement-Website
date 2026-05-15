@@ -129,7 +129,7 @@
             transition: all 0.25s ease;
         }
 
-        /* Checkbox selected JS */
+        /* Checkbox selected*/
         .card-checkbox:checked + .card {
             border-color: var(--primary-green);
             background-color: #f0fdf4;
