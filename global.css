@@ -140,22 +140,26 @@ footer a:hover {
   margin-bottom: 16px;
   max-width: 400px;
 
+  /* Main heading */
   & h1 {
     font-size: 40px;
     font-weight: 700;
     margin-bottom: 12px;
   }
 
+  /* Subtitle text*/
   & p {
     font-size: 16px;
     color: #64748B;
   }
 
+  /* Adds spacing between multiple paragraphs */
   & p + p {
     margin-top: 12px;
   }
 }
 
+/* Main content box */
 .choice-box {
   width: 500px;
   background: #fff;
@@ -165,6 +169,7 @@ footer a:hover {
   text-align: center;
 }
 
+/* Blue top bar decoration */
 .choice-box::before {
   content: "";
   display: block;
@@ -172,18 +177,21 @@ footer a:hover {
   background: #3B82F6;
 }
 
+/* Content inside the box */
 .choice-content {
   padding: 25px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
+  /* Box heading */
   & h3 {
     font-size: 18px;
     margin-bottom: 20px;
   }
 }
 
+/* Primary button styling */
 .btn {
   width: 220px;
   padding: 10px 16px;
@@ -195,16 +203,30 @@ footer a:hover {
   background: var(--clr-btn-default);
   color: var(--clr-text-secondary);
   font-weight: bold;
+
+  /* Button shadow */
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.50));
+
+  /* Smooth hover transition */
   transition: all 0.2s ease;
 }
 
-.btn:hover{
+/* Button hover effect */
+.btn:hover {
+
+  /* Changes button background colour */
   background: var(--clr-btn-hover);
+
+  /* Changes text colour */
   color: var(--clr-bg-surface);
+
+  /* Slight upward movement */
   transform: translateY(-2px);
+
+  /* Stronger shadow on hover */
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
-  color: #fff;
+
+  /* Slight transparency effect */
   opacity: 0.9;
 }
 
