@@ -1,0 +1,125 @@
+/* Title section */
+.title-box {
+  text-align: left;
+  max-width: 400px;
+  margin: 0;
+
+}
+/* "Hi," */
+.title-box h1 {
+  font-size: 40px;
+  font-weight: 350;
+  margin-bottom: 6px;
+  margin-left: -55px;
+  color: var(--clr-text-primary);
+}
+
+/* "Upload your bill" */
+.title-box p {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--clr-text-primary);
+  margin-left: -55px;
+}
+
+/* "Get a clear, visual summary of your utility costs" */
+.title-box p + p {
+  margin-top: 12px;
+  font-size: 16px;
+  font-weight: 550;
+  color: var(--clr-text-secondary);
+  margin-left: -55px;
+}
+
+/* upload container */
+.upload-box {
+  margin-top: 10px;
+  width: 420px;
+  height: 330px;
+  background: var(--clr-bg-page);
+  border: 2px dashed var(--clr-border-upload);
+  border-radius: 15px;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* upload container attributes */
+.upload-content {
+  padding: 25px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Icon */
+.upload-icon {
+  margin-top: 75px;
+  max-width: 20%; 
+  height: auto;     
+}
+
+/* "Click to upload" */
+.upload-content h3 {
+  color: var(--clr-text-secondary);
+  margin-top: 20px;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+/* "PDF, JPG or PNG" */
+.upload-content h4 {
+  color: var(--clr-text-secondary);
+  font-size: 14px;
+}
+
+/* Continue Button */
+.continue-btn {
+  display: flex;             
+  justify-content: center;   
+  align-items: center;       
+  text-decoration: none;     
+  margin-top: 40px;
+  width: 310px;
+  height: 65px;
+  background: var(--clr-btn-default);
+  color: var(--clr-text-secondary);
+  font-size: 24px;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;           
+  align-self: center;
+  transition: all 0.2s ease;
+  box-shadow: 3px 3px 5px rgb(176, 176, 176);
+}
+
+
+/* Button Hover */
+.continue-btn:hover {
+  background: var(--clr-btn-hover);
+  color: var(--clr-bg-surface);
+  opacity: 0.9;
+}
+
+
+/* Disclaimer Box */
+.disclaimer-box {
+margin-top: 40px;
+width: 540px;
+height: 110px;
+background: var(--clr-bg-info);
+border: 1px solid var(--clr-border-info);
+border-radius: 6px;
+display: flex;
+align-items: center;
+padding: 0 20px;
+margin-bottom: -30px;
+}
+
+/* Disclaimer text */
+.disclaimer-box p {
+font-size: 16px;
+color: var(--clr-text-info);
+text-align: left;
+}
+
