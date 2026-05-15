@@ -91,19 +91,35 @@ nav {
     font-weight: 600;
 }
 
+/* Footer */
+footer {
+    display: flex;
+    gap: 20px;
+    padding: 15px 40px;
+    background: #FFF;
+    border-top: 1px solid #DDD;
+    font-size: 12px;
+    font-weight: 600;
+    color: #1E293B;
+}
+
+footer span {
+    margin-right: 20px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #1E293B;
+}
+
+footer a:hover {
+    color: #4E8FF9;
+}
+
 /* 
     Homepage 
     Author: Robindro Kshetrimayum
 */
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background: #fff;
-  border-bottom: 1px solid #ddd;
-}
-
 .logo {
   font-weight: bold;
   color: #4aa3df;
@@ -774,27 +790,4 @@ header {
 @media (max-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } }
 
-/* Footer */
-footer {
-    display: flex;
-    gap: 20px;
-    padding: 15px 40px;
-    background: #FFF;
-    border-top: 1px solid #DDD;
-    font-size: 12px;
-    font-weight: 600;
-    color: #1E293B;
-}
 
-footer span {
-    margin-right: 20px;
-}
-
-footer a {
-    text-decoration: none;
-    color: #1E293B;
-}
-
-footer a:hover {
-    color: #4E8FF9;
-}
