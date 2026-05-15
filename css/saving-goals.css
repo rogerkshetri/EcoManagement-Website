@@ -1,5 +1,5 @@
 :root {
-               --primary-blue: #4a80f6;
+            --primary-blue: #4a80f6;
             --primary-green: #52c279;
             --bg-body: #f8fafc;
             --bg-light-blue: #f0f6ff;
@@ -131,9 +131,22 @@
             gap: 5px;
         }
 
-        .summary-box b { font-size: 14px; color: var(--text-dark); }
-        .val-blue { font-size: 24px; font-weight: 700; color: var(--primary-blue); }
-        .val-green { font-size: 24px; font-weight: 700; color: var(--primary-green); }
+        .summary-box b { 
+          font-size: 14px; 
+          color: var(--text-dark); 
+        }
+
+        .val-blue { 
+          font-size: 24px; 
+          font-weight: 700; 
+          color: var(--primary-blue); 
+        }
+
+        .val-green { 
+          font-size: 24px; 
+          font-weight: 700; 
+          color: var(--primary-green); 
+        }
 
         /* ---- GOALS LIST ---- */
         .goal-list {
@@ -159,8 +172,15 @@
             margin-bottom: 12px;
         }
 
-        .goal-header b { font-size: 15px; color: var(--text-dark); }
-        .goal-header p { font-size: 12px; color: var(--text-muted); margin-top: 2px;}
+        .goal-header b { 
+          font-size: 15px; 
+          color: var(--text-dark); 
+        }
+        .goal-header p { 
+          font-size: 12px; 
+          color: var(--text-muted); 
+          margin-top: 2px;
+        }
 
         /* Progress Bar */
         .progress-track {
@@ -172,8 +192,14 @@
             overflow: hidden;
         }
 
-        .progress-fill.green { background-color: var(--primary-green); width: 100%; height: 100%; }
-        .progress-fill.grey { background-color: #cbd5e1; width: 0%; height: 100%; }
+        .progress-fill.green { 
+          background-color: var(--primary-green); 
+          width: 100%; 
+          height: 100%; }
+        .progress-fill.grey { 
+          background-color: #cbd5e1; 
+          width: 0%; 
+          height: 100%; }
 
         /* Card Footer */
         .goal-footer {
@@ -192,10 +218,19 @@
             color: white;
         }
 
-        .btn.done { background-color: var(--primary-green); }
-        .btn.mark { background-color: var(--primary-blue); }
+        .btn.done { 
+          background-color: var(--primary-green); 
+        }
 
-        .saving-text { font-size: 12px; font-weight: 700; color: var(--primary-green); }
+        .btn.mark { 
+          background-color: var(--primary-blue); 
+        }
+
+        .saving-text { 
+          font-size: 12px; 
+          font-weight: 700; 
+          color: var(--primary-green); 
+        }
 
         /* ---- ADD GOAL BOX ---- */
         .add-goal-box {
@@ -221,10 +256,16 @@
             outline: none;
         }
 
-        .add-goal-inputs input:focus { border-color: var(--primary-blue); }
+        .add-goal-inputs input:focus { 
+          border-color: var(--primary-blue); 
+        }
 
-        .input-desc { flex: 1; }
-        .input-val { width: 80px; }
+        .input-desc { 
+          flex: 1; 
+        }
+        .input-val { 
+          width: 80px; 
+        }
 
         /* ---- MAIN ACTION BUTTON ---- */
         .btn-save-plan {
