@@ -123,7 +123,7 @@ footer a:hover {
 */
 .title-box {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 16px;
   max-width: 400px;
 
   & h1 {
@@ -147,7 +147,7 @@ footer a:hover {
 }
 
 .choice-box {
-  width: 420px;
+  width: 500px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.25);
@@ -158,7 +158,7 @@ footer a:hover {
 .choice-box::before {
   content: "";
   display: block;
-  height: 30px;
+  height: 35px;
   background: #3B82F6;
 }
 
@@ -175,9 +175,9 @@ footer a:hover {
 }
 
 .btn {
-  width: 260px;
+  width: 220px;
   padding: 10px 16px;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
   border: none;
   border-radius: 6px;
   font-size: 16px;
@@ -185,7 +185,6 @@ footer a:hover {
   background: #cfd6dd;
   color: #333;
   filter: drop-shadow(0 2px 2px rgba(0, 0, 0, 0.50));
-
   transition: all 0.2s ease;
 }
 
