@@ -92,6 +92,10 @@ nav {
     font-weight: 600;
 }
 
+.home:hover {
+    color: var(--clr-accent);
+}
+
 /* Footer */
 footer {
     display: flex;
