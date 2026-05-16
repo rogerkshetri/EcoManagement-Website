@@ -424,7 +424,7 @@ footer a:hover {
 }
 
 .bill-body {
-    padding: 26px 32px 36px;
+    padding: 26px 32px 8px;
     display: flex;
     flex-direction: column;
     align-items: center;
