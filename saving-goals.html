@@ -7,14 +7,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EcoManagement - Saving Goals</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;600&display=swap">
 
     <link rel="stylesheet" href="global.css">
 </head>
 <body>
+    
     <header>
         <div class="logo">
             <img src="icons/logo.png" alt="EcoManagement Logo">
@@ -23,93 +21,93 @@
             <a href="index.html" class="nav-link">Home</a>
             <a href="bill-translator.html" class="nav-link">Bill Translator</a>
             <a href="renters-hub.html" class="nav-link">Renters Hub</a>
-            <a href="saving-goals.html" class="nav-link">Saving Goals</a>
+            <a href="saving-goals.html" class="nav-link-active">Saving Goals</a>
         </nav>
     </header>
 
     <main>
-        <section class="hero">
-            <div class="hero-title-box">
+        <section class="savings-hero">
+            <div class="savings-hero-title-box">
                 <img src="icons/pig.png" alt="Saving" class="pig-icon">
                 <h1>Saving Goals</h1>
             </div>
-            <p class="quotes">Little changes, cooler bills</p>
+            <p class="savings-quotes">Little changes, cooler bills</p>
         </section>
 
-        <div class="main-container">
+        <div class="savings-container">
             
-            <div class="info-banner">
+            <div class="savings-info-banner">
                 <b>Mark goals done when you complete them.</b>
                 <span>Progress and estimated savings update automatically.</span>
             </div>
 
-            <div class="summary-row">
-                <div class="summary-box">
+            <div class="savings-summary-row">
+                <div class="savings-summary-box">
                     <b>Goals Completed</b>
-                    <span class="val-blue">1/3</span>
+                    <span class="savings-val-blue">1/3</span>
                 </div>
-                <div class="summary-box">
+                <div class="savings-summary-box">
                     <b>Estimated Savings</b>
-                    <span class="val-green">$17/month</span>
+                    <span class="savings-val-green">$17/month</span>
                 </div>
             </div>
 
-            <div class="goal-list">
+            <div class="savings-goal-list">
                 
-                <div class="goal-card completed">
-                    <div class="goal-header">
+                <div class="savings-goal-card savings-completed">
+                    <div class="savings-goal-header">
                         <b>Door Draft Stoppers</b>
                         <p>Solution to reduce heating/cooling loss.</p>
                     </div>
-                    <div class="progress-track">
-                        <div class="progress-fill green"></div>
+                    <div class="savings-progress-track">
+                        <div class="savings-progress-fill savings-green"></div>
                     </div>
-                    <div class="goal-footer">
-                        <button class="btn done">Done</button>
-                        <span class="saving-text">Saving $17/month</span>
-                    </div>
-                </div>
-
-                <div class="goal-card">
-                    <div class="goal-header">
-                        <b>Tap Aerators</b>
-                        <p>Uses less water without decreasing the pressure</p>
-                    </div>
-                    <div class="progress-track">
-                        <div class="progress-fill grey"></div>
-                    </div>
-                    <div class="goal-footer">
-                        <button class="btn mark">Mark as Done</button>
-                        <span class="saving-text">Saving $16/month</span>
+                    <div class="savings-goal-footer">
+                        <button class="savings-btn savings-done">Done</button>
+                        <span class="savings-text">Saving $17/month</span>
                     </div>
                 </div>
 
-                <div class="goal-card">
-                    <div class="goal-header">
+                <div class="savings-goal-card">
+                    <div class="savings-goal-header">
                         <b>Tap Aerators</b>
                         <p>Uses less water without decreasing the pressure</p>
                     </div>
-                    <div class="progress-track">
-                        <div class="progress-fill grey"></div>
+                    <div class="savings-progress-track">
+                        <div class="savings-progress-fill savings-grey"></div>
                     </div>
-                    <div class="goal-footer">
-                        <button class="btn mark">Mark as Done</button>
-                        <span class="saving-text">Saving $16/month</span>
+                    <div class="savings-goal-footer">
+                        <button class="savings-btn savings-mark">Mark as Done</button>
+                        <span class="savings-text">Saving $16/month</span>
+                    </div>
+                </div>
+
+                <div class="savings-goal-card">
+                    <div class="savings-goal-header">
+                        <b>Tap Aerators</b>
+                        <p>Uses less water without decreasing the pressure</p>
+                    </div>
+                    <div class="savings-progress-track">
+                        <div class="savings-progress-fill savings-grey"></div>
+                    </div>
+                    <div class="savings-goal-footer">
+                        <button class="savings-btn savings-mark">Mark as Done</button>
+                        <span class="savings-text">Saving $16/month</span>
                     </div>
                 </div>
 
             </div>
 
-            <div class="add-goal-box">
+            <div class="savings-add-goal-box">
                 <b>Add your own goal</b>
-                <div class="add-goal-inputs">
-                    <input type="text" class="input-desc" placeholder="Example: Turn off all bedroom lights.">
-                    <input type="text" class="input-val" placeholder="$ Saved">
-                    <button class="btn mark">Add</button>
+                <div class="savings-add-goal-inputs">
+                    <input type="text" class="savings-input-desc" placeholder="Example: Turn off all bedroom lights.">
+                    <input type="text" class="savings-input-val" placeholder="$ Saved">
+                    <button class="savings-btn savings-mark">Add</button>
                 </div>
             </div>
 
-            <button class="btn-save-plan">Save My Goal Plan</button>
+            <button class="savings-btn-save-plan">Save My Goal Plan</button>
 
         </div>
     </main>
