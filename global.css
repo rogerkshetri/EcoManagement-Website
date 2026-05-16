@@ -433,9 +433,13 @@ footer a:hover {
     margin-bottom: 18px;
 
     & h3 {
-        font-size: 22px;
+        font-size: 32px;
+        font-style: normal;
         font-weight: 700;
         color: #1E293B;
+        line-height: normal;
+        text-align: center;
+        font-family: "Noto Sans Georgian";
         margin: 0;
     }
 }
