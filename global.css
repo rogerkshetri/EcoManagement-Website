@@ -725,7 +725,20 @@ footer a:hover {
 /* ---- HERO TITLE ---- */
 .savings-hero {
     text-align: center;
-    padding: 40px 20px 20px;
+    padding: 0px 20px 20px;
+
+    & h1 {
+        font-size: 40px;
+        font-weight: 700;
+        margin-bottom: 7px;
+    }
+
+    & p {
+        color: #1E293B;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 400;
+    }
 }
 
 .savings-hero-title-box {
@@ -734,11 +747,6 @@ footer a:hover {
     align-items: center;
     gap: 15px;
     margin-bottom: 5px;
-
-    & h1 {
-        font-size: 32px;
-        font-weight: 700;
-    }
 }
 
 .pig-icon {
@@ -746,19 +754,21 @@ footer a:hover {
     height: auto;
 }
 
-.savings-quotes {
-    font-size: 18px;
-    color: var(--text-dark);
-}
-
 /* ---- MAIN DASHBOARD CARD ---- */
 .savings-container {
-    max-width: 680px; 
-    margin: 0 auto 60px;
-    background: white;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.savings-card {
+    width: 745px;
+    border-radius: 16px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.25);
+    padding: 17px 45px;
 }
 
 /* ---- INFO BANNER ---- */
