@@ -166,7 +166,7 @@ footer a:hover {
 
 /* Main content box */
 .choice-box {
-  width: 580px;
+  width: 560px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.25);
@@ -184,26 +184,26 @@ footer a:hover {
 
 /* Content inside the box */
 .choice-content {
-  padding: 40px 40px;
+  padding: 35px 35px;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   /* Box heading */
   & h3 {
-    font-size: 18px;
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: 26px;
   }
 }
 
 /* Primary button styling */
 .homepage-btn {
   width: 300px;
-  padding: 10px 16px;
-  margin-bottom: 22px;
+  padding: 14px 16px;
+  margin-bottom: 30px;
   border: none;
   border-radius: 6px;
-  font-size: 16px;
+  font-size: 20px;
   cursor: pointer;
   background: var(--clr-btn-default);
   color: var(--clr-text-secondary);
