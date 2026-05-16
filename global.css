@@ -746,21 +746,21 @@ footer a:hover {
 
 /* ---- INFO BANNER ---- */
 .savings-info-banner {
-    background-color: var(--bg-light-blue);
-    border: 1px solid var(--border-blue);
+    background-color: #EFF6FF;
+    border: 1px solid #BFDBFE;
     border-radius: 8px;
     padding: 12px;
     text-align: center;
     margin-bottom: 20px;
 
     & b {
-        font-size: 13px; 
+        font-size: 16px; 
         color: var(--text-dark); 
         display: block;
     }
 
     & span {
-        font-size: 12px;
+        font-size: 16px;
         color: var(--text-dark);
     }
 }
@@ -774,8 +774,8 @@ footer a:hover {
 
 .savings-summary-box {
     flex: 1;
-    background-color: var(--bg-light-green);
-    border: 1px solid var(--border-green);
+    background-color: #ECFDF5;
+    border: 1px solid #86EFAC;
     border-radius: 8px;
     padding: 15px;
     text-align: center;
@@ -784,21 +784,21 @@ footer a:hover {
     gap: 5px;
 
     & b {
-        font-size: 14px; 
-        color: var(--text-dark);
+        font-size: 16px; 
+        color: #4B5563;
     }
 }
 
-.val-blue {
+.savings-val-blue {
     font-size: 24px;
     font-weight: 700;
-    color: #3b82f6;
+    color: #1E40AF;
 }
 
-.val-green {
+.savings-val-green {
     font-size: 24px;
     font-weight: 700;
-    color: var(--primary-green);
+    color: #059669;
 }
 
 /* ---- GOALS LIST ---- */
@@ -810,28 +810,28 @@ footer a:hover {
 }
 
 .savings-goal-card {
-    border: 1px solid var(--border-grey);
+    border: 1px solid #DBEAFE;
     border-radius: 8px;
     padding: 15px;
     background: white;
 }
 
-.goal-card.savings-completed {
-    border-color: var(--primary-green);
-    background-color: var(--bg-light-green);
+.savings-goal-card.savings-completed {
+    border-color: #34D399;
+    background-color: #ECFDF5;
 }
 
 .savings-goal-header {
     margin-bottom: 12px;
 
     & b {
-        font-size: 15px; 
-        color: var(--text-dark); 
+        font-size: 20px; 
+        color: #000; 
     }
 
     & p {
-        font-size: 12px; 
-        color: var(--text-muted); 
+        font-size: 14px; 
+        color: #64748B; 
         margin-top: 2px;
     }
 }
@@ -847,7 +847,7 @@ footer a:hover {
 }
 
 .savings-progress-fill.savings-green { 
-    background-color: var(--primary-green); 
+    background-color: #10B981; 
     width: 100%; 
     height: 100%; 
 }
@@ -865,17 +865,17 @@ footer a:hover {
 }
 
 .savings-btn {
-    padding: 6px 16px;
+    padding: 6px 18px;
     border-radius: 6px;
     font-weight: 700;
-    font-size: 12px;
+    font-size: 18px;
     cursor: pointer;
     border: none;
     color: white;
 }
 
 .savings-btn.savings-done { 
-    background-color: var(--primary-green); 
+    background-color: #10B981; 
 }
 
 .savings-btn.savings-mark { 
@@ -883,22 +883,23 @@ footer a:hover {
 }
 
 .savings-text { 
-    font-size: 12px; 
+    font-size: 16px; 
     font-weight: 700; 
-    color: var(--primary-green); 
+    color: #10B981; 
 }
 
 /* ---- ADD GOAL BOX ---- */
 .savings-add-goal-box {
-    border: 2px dashed var(--border-blue);
+    border: 2px dashed #93C5FD;
     border-radius: 8px;
     padding: 20px;
     margin-bottom: 20px;
 
     & b {
         display: block;
-        max-width: 12px;
-        font-size: 14px;
+        font-size: 24px;
+        font-weight: 800;
+        padding-bottom: 12px;
     }
 }
 
@@ -908,10 +909,10 @@ footer a:hover {
 
     & input {
         padding: 10px 12px;
-        border: 1px solid var(--border-grey);
+        border: 1px solid #CBD5E1;
         border-radius: 6px;
         font-size: 12px;
-        font-family: var(--font-main);
+        font-family: #FFFFFF;
         outline: none;
     }
 
