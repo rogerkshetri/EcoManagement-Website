@@ -745,13 +745,14 @@ footer a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
     margin-bottom: 5px;
 }
 
 .pig-icon {
-    width: 40px;
-    height: auto;
+    width: 43px;
+    height: 43px;
+    margin-bottom: 7px;
 }
 
 /* ---- MAIN DASHBOARD CARD ---- */
@@ -899,6 +900,7 @@ footer a:hover {
     cursor: pointer;
     border: none;
     color: white;
+    transition: all 0.2s ease;
 }
 
 .savings-btn.savings-done { 
@@ -907,6 +909,11 @@ footer a:hover {
 
 .savings-btn.savings-mark { 
     background-color: #3b82f6; 
+}
+.savings-btn.savings-mark:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+    background: #2563EB;
 }
 
 .savings-text { 
