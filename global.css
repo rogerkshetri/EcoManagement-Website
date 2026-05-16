@@ -146,20 +146,29 @@ footer a:hover {
   & h1 {
     font-size: 40px;
     font-weight: 700;
-    margin-bottom: 12px;
+    margin-bottom: 7px;
   }
 
   /* Subtitle text */
   & p {
-    font-size: 16px;
-    color: #64748B;
+    font-size: 24px;
+    text-align: center;
+    color: #1E293B;
+    font-weight: 400
   }
+  /*& p {
+    color: #1E293B;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 400;
+    }*/
+}
 
   /* Adds spacing between multiple paragraphs */
   & p + p {
     margin-top: 12px;
   }
-}
+
 
 /* Main content box */
 .choice-box {
