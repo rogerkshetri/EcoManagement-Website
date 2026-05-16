@@ -491,7 +491,7 @@ footer a:hover {
     }
 }
 
-.action-buttons {
+.bill-action-buttons {
     display: flex;
     justify-content: center;
     gap: 18px;
@@ -499,7 +499,7 @@ footer a:hover {
     flex-wrap: wrap;
 }
 
-.action-btn {
+.bill-action-btn {
     min-width: 220px;
     padding: 14px 24px;
     border-radius: 12px;
@@ -509,26 +509,37 @@ footer a:hover {
     text-align: center;
     display: inline-block;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+    transition: all 0.2s ease;
+}
+.bill-action-btn:hover {
+    transform: translateY(-2px);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
 }
 
-.primary-btn {
+.bill-primary-btn {
     background: #3B82F6;
     color: #fff;
 }
+.bill-primary-btn:hover {
+    background: #2563EB;
+}
 
-.secondary-btn {
+.bill-secondary-btn {
     background: #F0E7FF;
     color: #6D28D9;
 }
+.bill-secondary-btn:hover {
+    background: #dcc9f8;
+}
 
-.upload-link {
+.bill-upload-link {
     color: #2563EB;
     font-size: 16px;
     font-weight: 700;
     text-decoration: none;
 }
 
-.upload-link:hover {
+.bill-upload-link:hover {
     text-decoration: underline;
 }
 
