@@ -166,7 +166,7 @@ footer a:hover {
 
 /* Main content box */
 .choice-box {
-  width: 500px;
+  width: 580px;
   background: #fff;
   border-radius: 8px;
   box-shadow: 2px 4px 8px 0 rgba(0, 0, 0, 0.25);
@@ -184,7 +184,7 @@ footer a:hover {
 
 /* Content inside the box */
 .choice-content {
-  padding: 25px 40px;
+  padding: 40px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -198,7 +198,7 @@ footer a:hover {
 
 /* Primary button styling */
 .homepage-btn {
-  width: 220px;
+  width: 300px;
   padding: 10px 16px;
   margin-bottom: 22px;
   border: none;
@@ -230,9 +230,6 @@ footer a:hover {
 
   /* Stronger shadow on hover */
   filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
-
-  /* Slight transparency effect */
-  opacity: 0.9;
 }
 
 /* 
